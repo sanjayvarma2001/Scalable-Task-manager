@@ -23,7 +23,7 @@ services:
       - "8000:8000"
     environment:
       DATABASE_URL: postgresql+asyncpg://postgres:postgres@db:5432/taskdb
-      SECRET_KEY: change-this-in-production-use-32-plus-chars
+      SECRET_KEY: 12345678901234567890123456789012
       ENVIRONMENT: development
       ALLOWED_ORIGINS: http://localhost:5173,http://localhost:3000
     depends_on:
